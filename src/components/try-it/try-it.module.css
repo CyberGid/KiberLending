@@ -1,0 +1,119 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 124px;
+}
+
+.img {
+  background-image: url(../../images/try-it-img/Try_it_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 112%;
+  height: clamp(417px, 53vw, 1008px);
+  margin-bottom: 15px;
+  transform: translateX(-100vw);
+}
+
+.content {
+  margin-left: 26px;
+  margin-bottom: 30px;
+  transform: translateX(100vw);
+}
+
+.title {
+  font-size: clamp(24px, 4vw, 50px);
+  line-height: 150%;
+  max-width: 85%;
+}
+
+.title span {
+  color: var(--color-primery-blue);
+}
+
+.subtitle {
+  display: none;
+}
+
+.img_qr {
+  display: none;
+  width: 44%;
+  max-width: 447px;
+}
+
+.link {
+  transform: translateX(-100vw);
+}
+
+.img_mount,
+.content_mount,
+.link_mount {
+  transform: translateX(0);
+  transition: transform 1.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url(../../images/try-it-img/background_try_it.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 0;
+    padding-left: clamp(30px, 4vw, 80px);
+    padding-right: clamp(30px, 4vw, 80px);
+  }
+
+  .img {
+    background-image: url(../../images/try-it-img/try_it_desctop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 0;
+    transform: translateX(100vw);
+  }
+
+  .container {
+    background-image: none;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-bottom: clamp(50px, 14vw, 134px);
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+
+  .title {
+    max-width: none;
+    margin-bottom: 49px;
+  }
+
+  .subtitle {
+    display: block;
+    font-size: clamp(16px, 2.5vw, 32px);
+    line-height: 140%;
+    margin: 0 0 71px;
+  }
+
+  .img_mount,
+  .content_mount {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out 0.5s;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 128px;
+    margin-top: -30px;
+  }
+}

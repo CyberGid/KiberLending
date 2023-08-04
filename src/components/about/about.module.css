@@ -1,0 +1,110 @@
+.wrapper {
+  background: var(--color-gradient-primery);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 76px;
+}
+
+.background_img {
+  display: none;
+}
+
+.img {
+  background: url(../../images/about-img/About_img-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: clamp(479px, 56vw, 1067px);
+  transform: translateX(-100vw);
+  margin-bottom: 33px;
+}
+
+.content {
+  transform: translateX(100vw);
+  margin: 0 auto;
+  width: 88%;
+}
+
+.img_mount,
+.content_mount {
+  transform: translateX(0);
+}
+
+.title {
+  font-family: var(--font-Manrope);
+  color: var(--color-primery-black);
+  font-weight: 500;
+  font-size: clamp(16px, 3vw, 50px);
+  line-height: 136%;
+}
+
+.list {
+  margin-top: 22px;
+  margin-bottom: 66px;
+  padding-left: 19px;
+}
+
+.subtitle {
+  font-family: var(--font-Manrope);
+  list-style-type: disc;
+  color: var(--color-primery-black);
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 32px);
+  line-height: 136%;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    background: transparent;
+    flex-direction: row;
+    padding-top: 0;
+    position: relative;
+  }
+
+  .img {
+    background: url(../../images/about-img/About_img_desctop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    margin-top: 152px;
+    margin-left: 28px;
+  }
+
+  .background_img {
+    display: block;
+    background-image: url(../../images/about-img/about_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: calc(140px - 12vw);
+    left: 0;
+    width: 100%;
+    height: clamp(902px, 78vw, 1480px);
+    z-index: -1;
+  }
+
+  .content {
+    width: 50%;
+    margin-top: 282px;
+    margin-left: -20px;
+  }
+
+  .img_mount,
+  .content_mount {
+    transition: transform 1.5s ease-in-out;
+  }
+
+  .list {
+    margin-top: 31px;
+    padding-left: 51px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .content {
+    margin-left: -40px;
+  }
+}

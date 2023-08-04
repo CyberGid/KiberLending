@@ -1,0 +1,12 @@
+.container_svg {
+  height: auto;
+  display: block;
+}
+
+.container_svg_header {
+  width: max(40px, min(10.7vw, 82px));
+}
+
+.container_svg_footer {
+  width: max(40px, min(10.7vw, 120px));
+}

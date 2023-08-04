@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 49px;
+}
+
+.container_text {
+  display: block;
+  transform: translateX(-100vw);
+  max-width: 90%;
+}
+
+.container_text_mount {
+  transform: translateX(0);
+  transition: transform 1.5s ease-in-out;
+}
+
+.img {
+  background: url(../../images/banner-img/Banner_img_mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 92%;
+  min-height: clamp(410px, 36vw, 681px);
+  transform: translateX(100vw);
+}
+
+.title {
+  color: var(--color-primery-black);
+  font-weight: 500;
+  font-size: clamp(28px, 6vw, 35px);
+  line-height: 150%;
+}
+
+.title span:nth-of-type(3) {
+  color: var(--color-primery-blue);
+}
+
+.subtitle {
+  font-family: var(--Manrope);
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 24px);
+  line-height: 150%;
+  display: none;
+}
+
+.link {
+  transform: translateX(-100vw);
+}
+
+.img_mount,
+.link_mount {
+  transform: translateX(0);
+  transition: transform 1.5s ease-in-out;
+}
+
+.link_desctop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
+    padding-left: clamp(30px, 4vw, 80px);
+    margin-bottom: 0;
+  }
+
+  .img {
+    background: url(../../images/banner-img/Banner_img_desctop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -27px;
+    margin-left: 47px;
+    margin-right: 20px;
+  }
+
+  .container_text {
+    max-width: 45%;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-weight: 600;
+    line-height: 140%;
+    font-size: clamp(35px, 4vw, 60px);
+    margin-bottom: 30px;
+  }
+
+  .title span:nth-of-type(1) {
+    color: var(--color-primery-blue);
+    font-weight: bold;
+  }
+
+  .title span:nth-of-type(3) {
+    font-weight: bold;
+  }
+
+  .subtitle {
+    display: block;
+    line-height: 180%;
+    margin-bottom: 51px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .link_desctop {
+    display: block;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .link {
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    padding-left: 160px;
+  }
+
+  .img {
+    margin-right: 0;
+  }
+}

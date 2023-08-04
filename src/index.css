@@ -1,13 +1,63 @@
+@import url(./vendor/fonts/Poppins/poppins.css);
+@import url(./vendor/fonts/Manrope/manrope.css);
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 375px;
+  box-sizing: border-box;
+  font-family: -apple-system, "Poppins", BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-Poppins: "Poppins";
+  --font-Manrope: "Manrope";
+  --color-primery-blue: #3495cf;
+  --color-primery-black: #0d1920;
+  --color-primery-white: #ffffff;
+  --color-other-green: #4f6573;
+  --color-other-light-green: #979798;
+  --color-gradient-primery: linear-gradient(178deg, #3495cf 0%, #d4e9f5 41.38%);
+  --color-gradient-theme-light: linear-gradient(
+    359deg,
+    #d4e9f5 9.26%,
+    #d4e9f5 100%
+  );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }

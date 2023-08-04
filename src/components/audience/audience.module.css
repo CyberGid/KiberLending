@@ -1,0 +1,46 @@
+.wrapper {
+  padding-top: clamp(70px, 10vw, 173px);
+  margin-bottom: 17px;
+}
+
+.title {
+  color: var(--color-primery-black);
+  font-weight: 500;
+  font-size: clamp(24px, 4vw, 50px);
+  line-height: 150%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: clamp(30px, 5vw, 85px);
+}
+
+.cards {
+  display: flex;
+  gap: 22px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 11px;
+  margin-bottom: clamp(98px, 13vw, 247px);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding-left: clamp(30px, 4vw, 80px);
+    padding-right: clamp(30px, 4vw, 80px);
+  }
+
+  .cards {
+    margin-left: 0;
+    gap: 33px;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .wrapper {
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+}

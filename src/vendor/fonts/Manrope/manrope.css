@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../Manrope/Manrope-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../Manrope/Manrope-SemiBold.ttf) format('truetype');
+}

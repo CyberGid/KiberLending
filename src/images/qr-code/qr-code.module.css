@@ -1,0 +1,19 @@
+.container_svg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container_svg {
+    display: block;
+    width: clamp(200px, 24vw, 447px);
+    height: clamp(200px, 24vw, 466px);
+    transform: translateY(900px);
+    opacity: 0;
+  }
+
+  .container_svg_mount {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out 0.5s;
+  }
+}

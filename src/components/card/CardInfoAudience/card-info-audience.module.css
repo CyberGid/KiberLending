@@ -1,0 +1,121 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(36px, 9vw, 168px);
+}
+
+.title {
+  font-weight: 500;
+  font-size: clamp(24px, 4vw, 50px);
+  line-height: 150%;
+  color: var(--color-primery-black);
+  width: 89%;
+  margin-left: 20px;
+  margin-bottom: clamp(30px, 4vw, 75px);
+}
+
+.title span:nth-of-type(2) {
+  color: var(--color-primery-blue);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: clamp(216px, 38vw, 286px);
+  align-self: center;
+  margin-bottom: 37px;
+}
+
+.list {
+  margin-left: 25px;
+}
+
+.item {
+  margin-bottom: 24px;
+}
+
+.item_wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.item_number {
+  width: clamp(34px, 5.2vw, 100px);
+  height: clamp(34px, 5.2vw, 100px);
+  background-color: var(--color-primery-blue);
+  color: var(--color-primery-white);
+  border-radius: 50%;
+  box-shadow: 0px 2px 6.5px 0px rgba(0, 0, 0, 0.25);
+  font-family: var(--font-Manrope);
+  font-weight: 600;
+  font-size: clamp(24px, 4vw, 60px);
+  line-height: 137%;
+  text-align: center;
+}
+
+.item_subtitle {
+  font-family: var(--font-Manrope);
+  font-weight: 500;
+  font-size: clamp(14px, 2vw, 30px);
+  line-height: 136%;
+  color: var(--color-primery-black);
+  width: 95%;
+  list-style-type: disc;
+}
+
+.item_list {
+  margin-left: clamp(68px, 8vw, 153px);
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .content_right {
+    flex-direction: row-reverse;
+  }
+
+  .img {
+    width: clamp(385px, 41vw, 772px);
+  }
+
+  .item {
+    margin-bottom: 4vw;
+  }
+
+  .item_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .content_right {
+    margin-top: -32px;
+  }
+
+  .img {
+    transform: translateX(-53px);
+  }
+
+  .img_right {
+    transform: translateX(55px);
+  }
+
+  .list {
+    margin-top: 46px;
+    margin-left: 0;
+    transform: translateX(-22px);
+  }
+
+  .list_right {
+    transform: translateX(20px);
+  }
+}

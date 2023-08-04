@@ -1,0 +1,4 @@
+.container_svg {
+  width: clamp(75px, 10vw, 173px);
+  height: auto;
+}
